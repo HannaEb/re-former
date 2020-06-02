@@ -9,7 +9,7 @@
   <input id="user_password" name="user[password]" type="password" />
   <input name="submit" type="submit" value="Create" />
 </form> -->
-
+<!--
 <%= form_tag("/users", method: "post") do %>
   <%= label_tag(:username, "Username:") %>
   <%= text_field_tag(:username) %>
@@ -18,4 +18,15 @@
   <%= label_tag(:password, "Password:") %>
   <%= password_field_tag(:password) %>
   <%= submit_tag("Create") %>
+<% end %> -->
+
+
+<%= form_for @user do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+  <%= f.label :email  %>
+  <%= f.email_field :email, placeholder: "user@example.com" %>
+  <%= f.label :password  %>
+  <%= f.password_field :password %>
+  <%= f.submit "Create" %>
 <% end %>
