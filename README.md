@@ -16,6 +16,7 @@ The project is finished and basic bootstrap styles have been added.
 $ git clone https://github.com/HannaEb/re-former.git
 $ cd re-former
 $ bundle
+$ rake db:migrate
 $ rails server
 ```
 In your browser, enter http://localhost:3000/
