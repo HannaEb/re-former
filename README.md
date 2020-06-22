@@ -2,12 +2,7 @@
 
 ## About
 
-Re-former is a very simple rails application that creates, updates ad displays users. It is part of The Odin Project's Ruby on Rails Curriculum (http://www.theodinproject.com) and focusses on building basic forms using both HTML and helper methods provided by Rails.
-
-
-## Progress
-
-The project is finished and basic bootstrap styles have been added.
+Re-former is a very simple rails application that creates, updates and displays users. It is part of The Odin Project's Ruby on Rails Curriculum (http://www.theodinproject.com) and focusses on building basic forms using both HTML and helper methods provided by Rails.
 
 
 ## How to Use
