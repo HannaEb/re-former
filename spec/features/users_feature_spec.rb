@@ -12,12 +12,7 @@ feature 'users' do
 
   context 'adding users' do
     scenario 'prompts user to fill out a form, then displays the new user' do
-      visit '/'
-      click_link('Add User')
-      fill_in('Username', with: 'Luni')
-      fill_in('Email', with: 'cat@example.com')
-      fill_in('Password', with: 'Password0')
-      click_button('Submit')
+      add_user
       expect(page).to have_content('Luni')
       expect(page).to have_link('edit')
     end
@@ -49,12 +44,7 @@ feature 'users' do
 
   context 'editing users' do
     scenario 'promts user to fill out a form then displays the users' do
-      visit '/'
-      click_link('Add User')
-      fill_in('Username', with: 'Luni')
-      fill_in('Email', with: 'cat@example.com')
-      fill_in('Password', with: 'Password0')
-      click_button('Submit')
+      add_user
       click_link('edit')
       fill_in('Username', with: 'Marley')
       fill_in('Email', with: 'cat@example.com')
