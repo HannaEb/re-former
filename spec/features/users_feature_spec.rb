@@ -43,7 +43,7 @@ feature 'users' do
   end
 
   context 'editing users' do
-    scenario 'promts user to fill out a form then displays the users' do
+    scenario 'prompts user to fill out a form then displays the users' do
       add_user
       click_link('edit')
       fill_in('Username', with: 'Marley')
